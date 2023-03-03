@@ -1,0 +1,38 @@
+package CLASE.POO;
+
+import java.util.Scanner;
+
+public class NewClass {
+
+	public static void main(String[] args) {
+		Scanner Entrada = new Scanner(System.in); /*ENTRADA ES PARA PEDIR EL NUMERO DE REGISTROS QUE NECESITA*/
+		System.out.println("Ingrese el número de registros ");
+		int N=Entrada.nextInt();    /*numero de registros*/
+		for(int i=0; i<N; i++) {
+			
+			//REGISTROS
+			System.out.print("Ingrese el nombre: ");
+			String nom=Entrada.next();
+			
+			System.out.print("Ingrese el valor hora trabajada: ");
+			int ht=Entrada.nextInt();
+			
+			System.out.print("Ingrese el N°Horas trabajadas: ");
+			int horasTrabajadas=Entrada.nextInt();
+			
+			
+			
+			int salBruto = horasTrabajadas*ht;
+			int RetenF= salBruto*12,5 / 100;
+			float salNeto = salBruto + RetenF;
+			
+			System.out.println("NOMBRE: "+nom + " SALARIO NETO --> "+salNeto+" SALARIO BRUTO --> "+salBruto+"RETENCIÓN DE LA FUENTE -->"+RetenF);
+			
+			
+			
+		}
+		
+		
+	}
+
+}
