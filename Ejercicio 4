@@ -1,0 +1,23 @@
+package clase.poo;
+import java.util.Scanner;
+public class CLASEPOO {
+
+   
+    public static void main(String[] args) {
+        Scanner e = new Scanner(System.in);
+        System.out.println("INGRESE LA EDAD DE JUAN");
+	int EJ=e.nextInt();
+        
+        int EALB= 2*EJ/3;
+        int EANA= 4*EJ/3;
+        int M= EJ + EALB+ EANA;
+        System.out.println("La edad de Juan es: " + EJ);
+        
+        System.out.println("La edad de Albaro es: " + EALB);
+        
+        System.out.println("La edad de Ana es: " + EANA);
+        
+        System.out.println("La edad de la mamá es: " + M);  
+    }
+    
+}
