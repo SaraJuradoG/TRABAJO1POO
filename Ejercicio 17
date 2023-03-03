@@ -1,0 +1,24 @@
+package CLASE.POO;
+
+import java.util.Scanner;
+
+public class NewClass {
+
+	public static void main(String[] args) {
+		Scanner Entrada = new Scanner(System.in); /*ENTRADA ES PARA PEDIR EL NUMERO DE REGISTROS QUE NECESITA*/
+		System.out.println("Ingrese el radio del circulo: ");
+		int R=Entrada.nextInt();   
+		
+                double pi=3.14159265359;
+                double area= pi * R^2;
+                double longitud= 2* pi* R;
+                
+                System.out.println("El area es:" + area);
+       
+                System.out.println("La longitud es: " + longitud);
+                
+		
+		
+	}
+
+}
