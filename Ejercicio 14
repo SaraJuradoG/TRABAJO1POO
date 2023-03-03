@@ -1,0 +1,23 @@
+package clase.poo;
+import java.util.Scanner;
+public class CLASEPOO {
+
+   
+    public static void main(String[] args) {
+        Scanner e = new Scanner(System.in);
+        System.out.println("INGRESE UN NÚMERO: ");
+	int Num=e.nextInt();
+        
+        int Cuadra= Num^2;
+        int Cubo= Num^3;
+        
+        System.out.println("El número es:" + Num);
+       
+        System.out.println("El cuadrado es: " + Cuadra);
+        
+        System.out.println("El cubo es: " + Cubo);
+        
+         
+    }
+    
+}
